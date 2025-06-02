@@ -1,0 +1,56 @@
+{
+  "name": "komeil-app",
+  "short_name": "km-pwa",
+  "description": "km-pwa-description",
+  "file_handlers": [],
+  "orientation": "any",
+  "display": "standalone",
+  "display_override": [],
+  "background_color": "#ffffff",
+  "theme_color": "#42b883",
+  "dir": "ltr",
+  "lang": "en",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "protocol_handlers": [],
+  "shortcuts": [],
+  "categories": [],
+  "iarc_rating_id": "",
+  "share_target": {
+    "action": "",
+    "method": "GET",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {}
+  },
+  "scope_extensions": [],
+  "id": "/mf.json",
+  "icons": [
+    {
+      "src": "./src/pwa/media/logo-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "./src/pwa/media/logo-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./src/pwa/media/screencapture-1.png",
+      "sizes": "630x959",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Application"
+    },
+    {
+      "src": "./src/pwa/media/screencapture-2.png",
+      "sizes": "630x438",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Wonder Widgets"
+    }
+  ],
+  "start_url": ""
+}
