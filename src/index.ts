@@ -1,3 +1,3 @@
 import lib from './lib';
-const kmPwa = lib;
-export default kmPwa;
+const kmManifest = lib;
+export default kmManifest;
