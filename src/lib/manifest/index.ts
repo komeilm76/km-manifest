@@ -1,5 +1,3 @@
-import jetpack from 'fs-jetpack';
-
 type Nothing = {};
 type StringLiteralUnion<T extends U, U = string> = T | (U & Nothing);
 type IconPurpose = 'monochrome' | 'maskable' | 'any';
