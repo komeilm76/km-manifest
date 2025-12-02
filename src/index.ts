@@ -3,6 +3,6 @@ import { IManifest, IMimeType } from './lib/manifest';
 
 export namespace kmManifest {
   export const make = lib.makeManifest;
-  export type IManifestConfig = IManifest;
+  export type IManifestConfig<MIME_TYPE extends string> = IManifest<MIME_TYPE>;
   export type IDefaultMimeType = IMimeType;
 }
