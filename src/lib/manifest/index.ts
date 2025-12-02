@@ -4,7 +4,7 @@ type Nothing = {};
 type StringLiteralUnion<T extends U, U = string> = T | (U & Nothing);
 type IconPurpose = 'monochrome' | 'maskable' | 'any';
 
-type IMimeType = 'image/svg' | 'image/png' | 'image/jpg';
+export type IMimeType = 'image/svg' | 'image/png' | 'image/jpg';
 
 type IconResource<TYPE> = {
   sizes: string;
@@ -44,7 +44,7 @@ type ShareTargetFiles = {
 };
 type LaunchHandlerClientMode = 'auto' | 'focus-existing' | 'navigate-existing' | 'navigate-new';
 
-type IManifest<MIME_TYPE extends string> = {
+export type IManifest<MIME_TYPE extends string> = {
   name: string;
   short_name: string;
   description: string;

@@ -1,9 +1,8 @@
 import lib from './lib';
-const kmManifest = lib;
-export default kmManifest;
+import { IManifest, IMimeType } from './lib/manifest';
 
-export const useManifest = () => {
-  return {
-    ...lib,
-  };
-};
+export namespace kmManifest {
+  export const make = lib.makeManifest;
+  export type IManifestConfig = IManifest;
+  export type IDefaultMimeType = IMimeType;
+}
