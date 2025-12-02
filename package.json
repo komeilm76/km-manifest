@@ -1,6 +1,6 @@
 {
   "name": "km-manifest",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "easy create manifest.json file with this package",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
