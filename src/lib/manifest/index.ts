@@ -155,33 +155,33 @@ const makeConfig = <MIME_TYPE extends string>(
   return { ...config, ...entryConfig };
 };
 
-// @ts-ignore
-const makeFile = <MIME_TYPE extends string>(
-  config: ReturnType<typeof makeConfig<MIME_TYPE>>,
-  options: { path: string }
-) => {
-  if (options.path.startsWith('/')) {
-    options.path = `.${options.path}`;
-  }
-  // const fileName = config.id?.startsWith('/')
-  //   ? config.id.substring(1)
-  //   : config.id ?? 'manifest.json';
-  const filePath = jetpack.cwd(options.path);
-  const isExist = filePath.exists('manifest.json');
-  if (isExist) {
-  }
-  filePath.write('manifest.json', config, {});
-  return {};
-};
+// // @ts-ignore
+// const makeFile = <MIME_TYPE extends string>(
+//   config: ReturnType<typeof makeConfig<MIME_TYPE>>,
+//   options: { path: string }
+// ) => {
+//   if (options.path.startsWith('/')) {
+//     options.path = `.${options.path}`;
+//   }
+//   // const fileName = config.id?.startsWith('/')
+//   //   ? config.id.substring(1)
+//   //   : config.id ?? 'manifest.json';
+//   const filePath = jetpack.cwd(options.path);
+//   const isExist = filePath.exists('manifest.json');
+//   if (isExist) {
+//   }
+//   filePath.write('manifest.json', config, {});
+//   return {};
+// };
 
 const makeManifest = <MIME_TYPE extends string>(
   entryConfig: ReturnType<typeof makeConfig<MIME_TYPE>>
 ) => {
   const config = makeConfig(entryConfig);
   return {
-    jsonFile: (options: { path: string }) => {
-      makeFile(config, options);
-    },
+    // jsonFile: (options: { path: string }) => {
+    //   makeFile(config, options);
+    // },
     object: () => {
       return config;
     },
